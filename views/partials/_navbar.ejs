@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+     <html lang="en">
+          <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Nav Bar</title>
+                 </head>
+                  <body>
+                     <nav>
+                         <ul>
+                             <li><a href="/">Home</a></li>
+                             <% if(isSignedIn) { %>
+                                <li><a href= '/index.ejs'> View My Recipes</a></li>
+                                <li> <a hfref = '/sign-out'> Sign Out </a></li>
+                             <% } else { %>
+                                <li><a href = '/sign-in.ejs'> Sign In</a></li>
+                                <li> <a href = '/sign-up.ejs'> Sign Up</li>
+                            <% } %>   
+                            </ul>
+                        </nav>
+                     
+                    </body>
+                    </html>
+

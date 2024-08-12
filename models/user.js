@@ -9,6 +9,10 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  recipe: {
+    type: mongoose.Schema.Types.ObjectId, 
+    required: true, 
+}
 });
 
 const User = mongoose.model('User', userSchema);
